@@ -35,8 +35,8 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 // cors
 if (process.env.NODE_ENV === 'development') {
-  app.use(cors());
 }
+app.use(cors());
 // routes middleware
 app.use('/api', blogRoutes);
 app.use('/api', authRoutes);
