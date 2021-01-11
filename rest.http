@@ -1,0 +1,27 @@
+###1. Signup API
+POST http://localhost:8000/api/signup HTTP/1.1
+content-type: application/json
+
+{
+  "name":"Sumit Gupta",
+  "email":"sumit.pec@gmail.com",
+  "password":"123456"
+}
+
+###2. Signin API
+POST http://localhost:8000/api/signin HTTP/1.1
+content-type: application/json
+
+{
+  "email":"sumit.pec@gmail.com",
+  "password":"123456"
+}
+
+###3. Signout API
+GET http://localhost:8000/api/signout HTTP/1.1
+content-type: application/json
+
+###4. Profile API
+GET http://localhost:8000/api/profile HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmJkYzY2YzI2YmFiMTYzNjRhNDI3ZjQiLCJpYXQiOjE2MDYyNzMxMDAsImV4cCI6MTYwNjM1OTUwMH0.lXkm5R1eo0uT7ALEI2DNhjaW2FODJHas_Pc_ypXkRK0
