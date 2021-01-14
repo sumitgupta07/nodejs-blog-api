@@ -41,6 +41,7 @@ app.use(cors());
 
 // routes middleware
 // app.use('/api', blogRoutes);
+// app.use('/api', authRoutes);
 // app.use('/api', userRoutes);
 // app.use('/api', categoryRoutes);
 // app.use('/api', tagRoutes);
@@ -53,7 +54,6 @@ app.put('/hello', (req, res) => {
   res.send({message: 'hello'});
 });
 
-app.use('/api', authRoutes);
 // port
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
