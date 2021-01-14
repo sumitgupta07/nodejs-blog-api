@@ -46,11 +46,11 @@ app.use('/api', categoryRoutes);
 app.use('/api', tagRoutes);
 app.use('/api', formRoutes);
 
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+// app.get('/*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
 
 // port
 const port = process.env.PORT || 8000;
