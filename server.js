@@ -52,6 +52,9 @@ app.use('/api', formRoutes);
 //   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 // });
 
+app.get('/hello', (req, res) => {
+  res.send({message: 'hello'});
+});
 // port
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
