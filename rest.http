@@ -1,3 +1,5 @@
+GET https://blog-next-app.herokuapp.com/hello HTTP/1.1
+
 ###1. Signup API
 POST https://blog-next-app.herokuapp.com/api/signup HTTP/1.1
 content-type: application/json

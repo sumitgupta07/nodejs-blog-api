@@ -36,7 +36,7 @@ app.use(cookieParser());
 // cors
 if (process.env.NODE_ENV === 'development') {
 }
-// app.options('*', cors());
+app.options('*', cors());
 app.use(cors());
 
 // routes middleware
