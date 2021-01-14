@@ -34,6 +34,9 @@ app.use(cors());
 app.get('/hello', (req, res) => {
   res.send({message: 'hello'});
 });
+app.put('/hello1', (req, res) => {
+  res.send({message: 'hello'});
+});
 
 // port
 const port = process.env.PORT || 8000;
