@@ -34,7 +34,7 @@ app.use(cors());
 app.get('/hello', (req, res) => {
   res.send({message: 'hello'});
 });
-app.put('/hello1', (req, res) => {
+app.put('/hello', (req, res) => {
   res.send({message: 'hello'});
 });
 
