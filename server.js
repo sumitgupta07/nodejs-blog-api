@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config();
+// require('dotenv').config();
 // bring routes
 const blogRoutes = require('./routes/blog');
 const authRoutes = require('./routes/auth');
