@@ -31,7 +31,16 @@ if (process.env.NODE_ENV === 'development') {
 app.options('*', cors());
 app.use(cors());
 
-app.get('/hello', (req, res) => {
+app.put('/hello', (req, res) => {
+  res.send({message: 'hello'});
+});
+app.delete('/hello', (req, res) => {
+  res.send({message: 'hello'});
+});
+app.post('/hello', (req, res) => {
+  res.send({message: 'hello'});
+});
+app.drama('/hello', (req, res) => {
   res.send({message: 'hello'});
 });
 // port
