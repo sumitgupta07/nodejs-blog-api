@@ -1,5 +1,5 @@
 ###1. Signup API
-POST http://localhost:8000/api/signup HTTP/1.1
+POST https://blog-next-app.herokuapp.com/api/signup HTTP/1.1
 content-type: application/json
 
 {
