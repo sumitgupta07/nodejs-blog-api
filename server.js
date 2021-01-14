@@ -40,12 +40,12 @@ app.options('*', cors());
 app.use(cors());
 
 // routes middleware
-app.use('/api', blogRoutes);
+// app.use('/api', blogRoutes);
 app.use('/api', authRoutes);
-app.use('/api', userRoutes);
-app.use('/api', categoryRoutes);
-app.use('/api', tagRoutes);
-app.use('/api', formRoutes);
+// app.use('/api', userRoutes);
+// app.use('/api', categoryRoutes);
+// app.use('/api', tagRoutes);
+// app.use('/api', formRoutes);
 
 app.get('/hello', (req, res) => {
   res.send({message: 'hello'});
